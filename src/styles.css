@@ -11,51 +11,41 @@ rgb(60, 123, 138)(turquesa oscuro)
 body {
   font-family: 'Cormorant Garamond';
 }
-.navbar {
-    background-color: rgb(209, 105, 127);
-    padding: 0;
-    margin: 0;
-    border: 0;
+button, .btn {
+  background-color: #fff;
+  border: 2px solid #713c34;
+  border-radius: 30px;
+  box-shadow: #713c34 3px 3px 0 0;
+  color: #e29dba;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 17px;
+  padding: 0 18px;
+  height: 45px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+@media (min-width: 768px) {
+  .button {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
 .elements-navbar {
-    width: 3%;
-}
-.elements-navbar#login {
-    width: fit-content;
+  width: 3%;
 }
 .mat-card {
-    border-radius: 35px;
-    margin: 10px 10px;
-    padding: 20px;
-    border-color: antiquewhite;
-}
-.mat-card#first-card {
-    padding: 0;
-}
-div#profile-background{
-    display: flex;
-}
-div#profile-background img{
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-}
-.profile-image {
-    border-radius: 50%;
-    width: 220px;
-    height: 220px;
-    margin-top: -110px;
-    z-index: 1;
-}
-#name {
-    font-weight: bolder;
-    }
-.info-header {
-    font-size: large;
-    font-weight: bold;
-}
-#login, #logout {
-  font-size: medium;
-  font-weight: 500;
+  border-radius: 35px;
+  margin: 8px 8px;
+  padding: 20px;
+  border-color: rgb(250, 215, 250);
 }
 section {
     font-size: large;
@@ -74,140 +64,8 @@ h5 {
 ul {
 list-style: none;
 }
-#skills span{
-    font-size: large;
-    font-weight: bold;
-}
-.skill-bars{
-    padding: 25px 30px;
-    width: auto;
-    background: #fff;
-    box-shadow: 5px 5px 15px rgb(75, 138, 156);
-    border-radius: 10px;
-  }
-  .skill-bars .bar{
-    margin: 20px 0;
-  }
-  .skill-bars .bar:first-child{
-    margin-top: 0px;
-  }
-  .skill-bars .bar .info{
-    margin-bottom: 5px;
-  }
-  .skill-bars .bar .info span{
-    font-weight: 500;
-    font-size: 20px;
-    opacity: 0;
-    animation: showText 0.5s 1s linear forwards;
-  }
-  @keyframes showText {
-    100%{
-      opacity: 1;
-    }
-  }
-  .skill-bars .bar .progress-line{
-    height: 10px;
-    width: 100%;
-    background: #f0f0f0;
-    position: relative;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 10px;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
-                0 1px rgba(255,255,255,0.8);
-    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
-  @keyframes animate {
-    100%{
-      transform: scaleX(1);
-    }
-  }
-  .bar .progress-line span{
-    height: 100%;
-    position: absolute;
-    border-radius: 10px;
-    transform: scaleX(0);
-    transform-origin: left;
-    background: rgb(247, 166, 204);
-    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
-  }
-  .bar .progress-line.html span{
-    width: 80%;
-  }
-  .bar .progress-line.css span{
-    width: 60%;
-  }
-  .bar .progress-line.javascript span{
-    width: 75%;
-  }
-  .bar .progress-line.typescript span{
-    width: 30%;
-  }
-  .bar .progress-line.ingles span{
-    width: 75%;
-  }
-  .progress-line span::before{
-    position: absolute;
-    content: "";
-    top: -10px;
-    right: 0;
-    height: 0;
-    width: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0px;
-    border-right-width: 0px;
-    border-top-color: rgb(75, 138, 156);
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-  }
-  .progress-line span::after{
-    position: absolute;
-    top: -31px;
-    right: 0;
-    font-weight: lighter;
-    background: rgb(75, 138, 156);
-    color: #fff;
-    padding: 1px 8px;
-    font-size: 15px;
-    border-radius: 3px;
-    opacity: 0;
-    animation: showText2 0.5s 1.5s linear forwards;
-  }
-  @keyframes showText2 {
-    100%{
-      opacity: 1;
-    }
-  }
-  .progress-line.html span::after{
-    content: "80%";
-  }
-  .progress-line.css span::after{
-    content: "60%";
-  }
-  .progress-line.javascript span::after{
-    content: "75%";
-  }
-  .progress-line.typescript span::after{
-    content: "30%";
-  }
-  .progress-line.ingles span::after{
-    content: "75%";
-  }
-  #proyectos {
-    padding: 25px 30px;
-    background: #fff;
-    box-shadow: 5px 5px 15px rgb(75, 138, 156);
-    border-radius: 10px;
-  }
-  #footer {
-    border-radius: 0;
-    height:min-content;
-    background-color: rgb(75, 138, 156);
-    color: white;
-    font-size: large;
-    font-weight: 500;
-  }
-  a:link{
+
+a:link{
     color: rgb(247, 166, 204);
     font-weight: 100;
   } 

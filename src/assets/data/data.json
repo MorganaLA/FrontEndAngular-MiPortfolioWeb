@@ -1,3 +1,11 @@
 {
-    "name": "Morgana Luz Alemann"
+    "programa": {
+     "nombrePrograma": "Argentina Programa",
+     "logo": "/frontend-portfolio/src/assets/Imagenes/APLogo-20-20.png"
+    },
+    "name": "Morgana Luz Alemann",
+    "backImage": "/frontend-portfolio/src/assets/Imagenes/Picsart_22-09-10_18-04-24-266.jpg",
+    "image": "/frontend-portfolio/src/assets/Imagenes/PicsArt_08-15-04.17.35.jpg"
+
+
 }

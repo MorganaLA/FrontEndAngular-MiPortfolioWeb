@@ -1,0 +1,8 @@
+#footer {
+    border-radius: 0;
+    height:min-content;
+    background-color: rgb(75, 138, 156);
+    color: white;
+    font-size: large;
+    font-weight: 500;
+  }

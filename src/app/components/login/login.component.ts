@@ -19,7 +19,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 public btnLogin(): void {
+  console.log("Email: " +  this.loginTxtEmail);
+  console.log("pwd: " +  this.loginTxtPwd);
+
   this.auth.loginSimple(this.loginTxtEmail, this.loginTxtPwd);
-}
+} 
+
 
 }

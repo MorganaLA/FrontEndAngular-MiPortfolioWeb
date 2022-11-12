@@ -1,0 +1,34 @@
+#btn-i-s{
+    box-shadow: #0a8574 3px 3px 0 0;
+    border: 2px solid #0a8574;
+    background-color: #fff;
+    color:#11b19b;
+  }
+ #btn-i-s:hover{
+    background-color: #fff;
+    border: 2px solid #0a5885;
+    box-shadow: #0a5885 3px 3px 0 0;
+    color: #1171b1;
+  }
+  
+  #btn-i-s:active{
+    box-shadow: #0a8574 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
+  #btn-cancelar{
+    box-shadow: #737d8b 3px 3px 0 0;
+    border: 2px solid #737d8b;
+    background-color: #fff;
+    color:#313449;
+  }
+ #btn-cancelar:hover{
+    background-color: #fff;
+    border: 2px solid #000000;
+    box-shadow: #000000 3px 3px 0 0;
+    color: #666666;
+  }
+  
+  #btn-cancelar:active{
+    box-shadow: #0a8574 2px 2px 0 0;
+    transform: translate(2px, 2px);
+  }
